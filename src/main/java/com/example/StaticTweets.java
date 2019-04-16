@@ -55,6 +55,7 @@ public class StaticTweets {
 	    	System.out.println("Searching for tweets containing: " + search);
 	    	final ChunkedOutput<String> output = new ChunkedOutput<String>(String.class);
 	    	//search = ""; //---Remove this line to enable searching
+	    
 	    	runTask(output, search);
 	    	return Response.ok()
 	    			.entity(output)
